@@ -31,7 +31,7 @@ public class Lab1Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        // Сумма
+        // Сумма 
         sumAction.execute();
         System.out.printf("%d + %d = %d%n", sumAction.getA(), sumAction.getB(), sumAction.getResult());
 
@@ -40,7 +40,7 @@ public class Lab1Application implements CommandLineRunner {
         System.out.printf("%d! = %d%n", factorialAction.getN(), factorialAction.getResult());
 
         // ✅ Новое действие — умножение
-        multiplyAction.execute();
+        multiplyAction.execute(); // показ для merge
         System.out.printf("%d * %d = %d%n", multiplyAction.getA(), multiplyAction.getB(), multiplyAction.getResult());
     }
 }

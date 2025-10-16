@@ -12,7 +12,8 @@ public class Lab1Application implements CommandLineRunner {
 
     private final SumAction sumAction;
     private final FactorialAction factorialAction;
-    private final MultiplyAction multiplyAction; // ✅ добавили
+    private final MultiplyAction multiplyAction; // ✅ добавили 
+
 
     public Lab1Application(SumAction sumAction, FactorialAction factorialAction, MultiplyAction multiplyAction) {
         this.sumAction = sumAction;
@@ -31,7 +32,8 @@ public class Lab1Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        // Сумма
+        // Сумма та Демонстраційна зміна для злиття гілок
+
         sumAction.execute();
         System.out.printf("%d + %d = %d%n", sumAction.getA(), sumAction.getB(), sumAction.getResult());
 

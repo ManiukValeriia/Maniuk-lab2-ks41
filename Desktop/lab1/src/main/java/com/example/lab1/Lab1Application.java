@@ -26,6 +26,8 @@ public class Lab1Application implements CommandLineRunner {
 
     @Bean
     public static Scanner scanner() {
+		// Демонстраційна зміна для merge
+
         return new Scanner(System.in);
     }
 
@@ -40,7 +42,7 @@ public class Lab1Application implements CommandLineRunner {
         System.out.printf("%d! = %d%n", factorialAction.getN(), factorialAction.getResult());
 
         // ✅ Новое действие — умножение
-        multiplyAction.execute(); // показ для merge
+        multiplyAction.execute(); 
         System.out.printf("%d * %d = %d%n", multiplyAction.getA(), multiplyAction.getB(), multiplyAction.getResult());
     }
 }
